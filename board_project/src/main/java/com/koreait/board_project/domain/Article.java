@@ -34,8 +34,8 @@ public class Article {
     @Setter private String content;
     @Setter private String hashtag;
 
-    @CreatedDate @Column(nullable = false) private String createdBy;
-    @CreatedBy @Column(nullable = false, length = 100) private LocalDateTime createdAt;
+    @CreatedBy @Column(nullable = false) private String createdBy;
+    @CreatedDate @Column(nullable = false, length = 100) private LocalDateTime createdAt;
     @LastModifiedDate @Column(nullable = false) private LocalDateTime modifiedAt;
     @LastModifiedBy @Column(nullable = false, length = 100) private String modifiedBy;
 
